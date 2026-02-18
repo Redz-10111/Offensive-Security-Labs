@@ -227,14 +227,11 @@ Plugin installation path:
 
 `Plugins → Add New → WP File Manager`
 
-Once activated, the plugin provided:
+Once inside, modify an existing PHP file and insert reverse shell code to achieve remote code execution (RCE).
 
-- Full directory tree navigation
-- PHP file editing capabilities
-- Arbitrary file write access within the web root
+We will use the **Pentestmonkey's PHP reverse shell** code and set up a listener.
 
-An existing PHP file was modified to include a reverse shell payload, enabling Remote Code Execution.
-
+![](adjuntos/Pasted%20image%2020260219014417.png)
 ### Listener Preparation on Attacker Machine
 
 Prior to triggering the malicious PHP file, a listener was configured to receive the inbound connection:

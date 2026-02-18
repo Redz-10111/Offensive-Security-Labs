@@ -4,8 +4,6 @@ Hands-on offensive security labs focused on realistic attack scenarios and metho
 
 This repository documents practical machine compromises performed across multiple cybersecurity platforms, applying structured attack methodologies and real-world exploitation techniques.  
 
----
-
 ## 🎯 Scope  
 
 Machines solved across:
@@ -26,7 +24,6 @@ Each lab documents the attack lifecycle where applicable, including:
 
 The objective is not merely to obtain access, but to thoroughly understand, analyze, and document the reasoning behind each compromise.  
 
----
 
 ## 🧠 Methodology  
 
@@ -48,7 +45,6 @@ Focus areas include:
 - Remote Code Execution (RCE)  
 - Application-layer vulnerabilities  
 
----
 
 ## 🔑 Tooling & Stack  
 
@@ -61,7 +57,6 @@ Focus areas include:
 ![Nmap](https://img.shields.io/badge/Nmap-Enumeration-00457C)
 ![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
 
----
 
 ## 📂 Repository Structure  
 
@@ -72,7 +67,6 @@ Offensive-Security-Labs/
 └── THM/
 ```
 
----
 
 ## 📘 Documentation Standards
 
@@ -82,7 +76,6 @@ Offensive-Security-Labs/
 - Technical reasoning  
 - Vulnerability references  
 
----
 
 ## 👤 Author
 
@@ -90,7 +83,6 @@ Manuel Domingo Acedo Vélez
 GitHub: https://github.com/Redz-10111  
 LinkedIn: https://www.linkedin.com/in/manuel-redz10111/
 
----
 
 ## ⚖️ Legal Notice  
 

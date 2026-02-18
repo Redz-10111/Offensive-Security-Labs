@@ -37,12 +37,11 @@ sudo bash auto_deploy.sh walkingcms.tar
 ## 🔎 3️⃣ Enumeración
 
 ```bash
-sudo nmap -p- -sS -sC -sV --min-rate 5000 -n -Pn 172.17.0.2 
-
+sudo nmap -p- -sS -sC -sV --min-rate 5000 -n -Pn 172.17.0.2
 PORT   STATE SERVICE VERSION
 80/tcp open  http    Apache 2.4.57 (Debian)
 ```
-## 4️⃣ Análisis del servicio
+## 4️⃣ Análisis 
 
 El puerto **80/tcp** expone un servidor Apache 2.4.57 (Debian).
 
@@ -217,10 +216,9 @@ Trying mario / dakota Time: 00:00:17 <  > (390 / 14344782)  0.00%  ETA: ??:??:??
 
 📌 Acceso autenticado como administrador de WordPress.
 
-## 6️⃣ Explotación
+## 6️⃣ Explotación – RCE vía plugin malicioso
 
 Acceso al panel administrativo de WordPress:
-
 ```bash
 http://172.17.0.2/wordpress/wp-admin
 ```
@@ -229,15 +227,14 @@ Tras autenticación exitosa con las credenciales obtenidas, se procede a la inst
 
 Instalación del plugin:
 
-`Plugins → Añadir nuevo → WP File Manager`
+`Plugins → Añadir nuevo → Buscar WP 'File Manager' → Instalar → Activar`
 
-Una vez activado, el plugin permite:
+Una vez dentro modificamos un archivo PHP existente e inserta código de reverse shell para lograr ejecución remota.
 
-- Navegación completa del árbol de directorios.
-- Edición de archivos PHP.
-- Escritura arbitraria dentro del entorno web.
+Usaremos el código **PHP de Pentestmonkey's reverse shell** y nos pondremos a la escucha.
 
-Se modifica un archivo PHP existente e inserta código de reverse shell para lograr ejecución remota.
+![](adjuntos/Pasted%20image%2020260219014417.png)
+
 ### Preparación del listener en la máquina atacante
 
 Antes de ejecutar el archivo modificado, se prepara un listener para recibir la conexión entrante:
@@ -252,13 +249,11 @@ Listening on 0.0.0.0 443
 ```
 
 El listener debe permanecer activo antes de invocar el archivo PHP alterado desde el navegador.
-
 Ejecución del archivo modificado desde navegador.
 
 ## 7️⃣ Validación de acceso
 
 Conexión recibida en la máquina atacante:
-
 ```bash
 sudo nc -lvnp 443
 
