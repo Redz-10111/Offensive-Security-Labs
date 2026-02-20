@@ -1,3 +1,5 @@
+![](adjuntos/Pasted%20image%2020260220022625.png)
+
 # Trust – DockerLabs
 
 > Compromise of a Docker-based environment through web enumeration, discovery of valid SSH credentials via brute force, and privilege escalation to root by exploiting a misconfigured `sudo` rule (`vim` – GTFOBins).
@@ -44,8 +46,6 @@ sudo nmap -p- -sS -sC -sV --min-rate 5000 -n -Pn 172.18.0.2 escaneo
 22/tcp open  ssh     OpenSSH 9.2p1 Debian 2+deb12u2 (protocol 2.0)
 80/tcp open  http    Apache httpd 2.4.57 ((Debian))
 ```
-
----
 
 ## 4️⃣ Analysis
 
@@ -158,6 +158,7 @@ The resource can be inspected either by using **curl** or by directly accessing 
 </html>
 ```
 - http://172.18.0.2/secret.php :
+
 ![](adjuntos/Pasted%20image%2020260220030009.png)
 
 

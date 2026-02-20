@@ -48,7 +48,6 @@ sudo nmap -p- -sS -sC -sV --min-rate 5000 -n -Pn 172.18.0.2 escaneo
 80/tcp open  http    Apache httpd 2.4.57 ((Debian))
 ```
 
----
 ## 4️⃣ Análisis
 
 El escaneo identificó dos servicios expuestos:
@@ -158,6 +157,7 @@ Podemos hacer **curl** o bien metiéndonos en http://172.18.0.2/secret.php en el
 </html>
 ```
 - http://172.18.0.2/secret.php :
+
 ![](adjuntos/Pasted%20image%2020260220030009.png)
 
 ## 6️⃣ Explotación
