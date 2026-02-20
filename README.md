@@ -1,64 +1,90 @@
-```bash
- /$$$$$$$                      /$$                           /$$                 /$$                
-| $$__  $$                    | $$                          | $$                | $$                
-| $$  \ $$  /$$$$$$   /$$$$$$$| $$   /$$  /$$$$$$   /$$$$$$ | $$        /$$$$$$ | $$$$$$$   /$$$$$$$
-| $$  | $$ /$$__  $$ /$$_____/| $$  /$$/ /$$__  $$ /$$__  $$| $$       |____  $$| $$__  $$ /$$_____/
-| $$  | $$| $$  \ $$| $$      | $$$$$$/ | $$$$$$$$| $$  \__/| $$        /$$$$$$$| $$  \ $$|  $$$$$$ 
-| $$  | $$| $$  | $$| $$      | $$_  $$ | $$_____/| $$      | $$       /$$__  $$| $$  | $$ \____  $$
-| $$$$$$$/|  $$$$$$/|  $$$$$$$| $$ \  $$|  $$$$$$$| $$      | $$$$$$$$|  $$$$$$$| $$$$$$$/ /$$$$$$$/
-|_______/  \______/  \_______/|__/  \__/ \_______/|__/      |________/ \_______/|_______/ |_______/ 
+# ⚔️ Offensive Security Labs  
+
+Hands-on offensive security labs focused on realistic attack scenarios and methodology-driven exploitation. 
+
+This repository documents practical machine compromises performed across multiple cybersecurity platforms, applying structured attack methodologies and real-world exploitation techniques.  
+
+## 🎯 Scope  
+
+Machines solved across:
+
+- **DockerLabs**
+- **Hack The Box (HTB)**
+- **TryHackMe (THM)**
+
+Each lab documents the attack lifecycle where applicable, including: 
+
+- Target reconnaissance  
+- Service enumeration  
+- Attack surface mapping  
+- Vulnerability identification  
+- Exploitation  
+- Privilege escalation   
+- Post-exploitation validation  
+
+The objective is not merely to obtain access, but to thoroughly understand, analyze, and document the reasoning behind each compromise.  
+
+
+## 🧠 Methodology  
+
+Each engagement follows a structured offensive workflow:  
+
+1. Full port discovery (`-p-`)  
+2. Service fingerprinting (`-sC -sV`)  
+3. Attack vector prioritization  
+4. Vulnerability research (CVE / public PoC / manual exploitation)  
+5. Initial access  
+6. Privilege escalation  
+7. System validation (`whoami`, `id`, etc.)  
+
+Focus areas include: 
+
+- Web exploitation  
+- Misconfigurations  
+- Authentication bypass  
+- Remote Code Execution (RCE)  
+- Application-layer vulnerabilities  
+
+
+## 🔑 Tooling & Stack  
+
+![HackTheBox](https://img.shields.io/badge/HackTheBox-Offensive-9FEF00?logo=hackthebox&logoColor=black)
+![TryHackMe](https://img.shields.io/badge/TryHackMe-Red%20Team-212C42?logo=tryhackme&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Terminal-000000?logo=linux&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-Command%20Line-4EAA25?logo=gnu-bash&logoColor=white)
+![Python](https://img.shields.io/badge/Python-Exploit%20Dev-3776AB?logo=python&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-Framework-0066CC)
+![Nmap](https://img.shields.io/badge/Nmap-Enumeration-00457C)
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
+
+
+## 📂 Repository Structure  
+
+```text
+Offensive-Security-Labs/
+├── DockerLabs/
+├── HTB/
+└── THM/
 ```
 
-# 🔐 DockerLabs — Offensive Security Labs
 
-> This section documents practical exploitation scenarios conducted within isolated Docker environments on the DockerLabs platform.
+## 📘 Documentation Standards
 
-
-## 🎯 Objective
-
-To document realistic exploitation scenarios following a structured offensive security methodology that includes:
-
-- Service enumeration and analysis
-- Vulnerability identification and validation
-- Controlled exploitation
-- Pivoting and attack chaining
-- Privilege validation
-- Security impact assessment
-
-Each lab reflects the full attack lifecycle, from initial reconnaissance to validated system compromise.
-## 📌 Usage Instructions
-
-## 1️⃣ Lab Information
-
-- **Platform:** [DockerLabs](https://dockerlabs.es)
-- **Environment Type:** Docker-based containerized lab  
-- **Deployment Model:** Local execution via Docker containers  
-
-All laboratories are executed in controlled containerized environments to ensure reproducibility and safe testing conditions.
+- Step-by-step compromise process  
+- Command output evidence  
+- Screenshots (`/adjuntos`)  
+- Technical reasoning  
+- Vulnerability references  
 
 
-## 2️⃣ Download
+## 👤 Author
 
-Machines are downloaded directly from the official [DockerLabs](https://dockerlabs.es) platform.
+Manuel Domingo Acedo Vélez  
+GitHub: https://github.com/Redz-10111  
+LinkedIn: https://www.linkedin.com/in/manuel-redz10111/
 
 
-## 3️⃣ Extraction
+## ⚖️ Legal Notice  
 
-If required, extract the provided file:
-
-```bash
-unzip <machine_name>.zip
-```
-
-## 4️⃣ 🐳 Container Deployment
-
-Each machine is deployed locally as a Docker container using the provided script:
-```bash
-sudo bash auto_deploy.sh <machine_name>.tar
-```
-
-## Example Output
-
-### `[+] Image loaded successfully [+] Container started [+] Assigned IP: 172.17.0.X`
-
-Once deployed, the container becomes accessible through the internal IP address assigned by the Docker network.
+All techniques and methodologies demonstrated in this repository were performed in authorized laboratory environments for educational and research purposes only. 
+The author does not endorse or encourage unauthorized access to systems, networks, or data. Any misuse of the information provided is the sole responsibility of the user.
