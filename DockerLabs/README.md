@@ -62,3 +62,4 @@ sudo bash auto_deploy.sh <machine_name>.tar
 ### `[+] Image loaded successfully [+] Container started [+] Assigned IP: 172.17.0.X`
 
 Once deployed, the container becomes accessible through the internal IP address assigned by the Docker network.
+_Last index update._
