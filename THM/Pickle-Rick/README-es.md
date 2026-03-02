@@ -5,7 +5,7 @@
 
 ---
 
-## 1️⃣ Información del Laboratorio
+# 1️⃣ Información del Laboratorio
 
 **Plataforma:** TryHackMe  
 **Tipo de Entorno:** Entorno Linux  
@@ -33,7 +33,7 @@
 - Escalada de privilegios mediante mala configuración
 - Validación de compromiso total del sistema (root)
 
-# 2️⃣ Reconocimiento
+# 2 Reconocimiento
 
 ## 2.1 VPN y Conectividad
 
@@ -78,7 +78,7 @@ Superficie principal seleccionada: **HTTP (Puerto 80)**.
 
 
 
-# 🌐 3️⃣ Enumeración Web
+# 3 Enumeración Web
 
 
 
@@ -113,7 +113,7 @@ En este punto, el enfoque pasó de reconocimiento web a interacción autenticada
 
 
 
-# 💻 4️⃣ Ejecución Remota de Comandos (RCE)
+# 4 Ejecución Remota de Comandos (RCE)
 
 
 
@@ -171,7 +171,7 @@ La RCE seguía siendo completamente explotable.
 
 
 
-# 🔎 5️⃣ Enumeración Post-Explotación
+# 5 Enumeración Post-Explotación
 
 
 
@@ -217,7 +217,7 @@ Se obtuvo un segundo recurso protegido a nivel usuario.
 
 
 
-# 🔐 6️⃣ Escalada de Privilegios
+# 6 Escalada de Privilegios
 
 
 

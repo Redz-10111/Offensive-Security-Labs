@@ -1,11 +1,11 @@
 ![](adjuntos/Pasted%20image%2020260302010325.png)
-# 🧪 # Pickle Rick – TryHackMe
+# 🧪 Pickle Rick – TryHackMe
 
 >Compromise of a Linux host through web application exploitation, authenticated command execution, system enumeration, and privilege escalation to root by abusing an insecure sudo configuration.
 
 ---
 
-## 1️⃣ Lab Information
+# 1️⃣ Lab Information
 
 **Platform:** TryHackMe  
 **Environment Type:** Linux-based lab environment  
@@ -31,6 +31,7 @@
 - Sudo privilege assessment (`sudo -l`)
 - Privilege escalation through sudo misconfiguration
 - Root-level system compromise validation
+
 # 2. Reconnaissance
 
 ## 2.1 VPN & Connectivity
@@ -78,7 +79,7 @@ Reasoning:
 Primary attack surface: **HTTP (Port 80)**.
 
 
-# 🌐 3. Web Enumeration
+# 3. Web Enumeration
 
 
 ## 3.1 Manual Inspection
@@ -114,7 +115,7 @@ Using discovered information, access was obtained to an internal **Command Execu
 Engagement shifted from unauthenticated web access to authenticated application interaction.
 
 
-# 💻 4. Remote Command Execution (RCE)
+# 4. Remote Command Execution (RCE)
 
 
 ## 4.1 Execution Validation
@@ -169,7 +170,7 @@ less <file>
 Blacklist-based filtering is insufficient.  
 RCE remained fully exploitable.
 
-# 🔎 5. Post-Exploitation Enumeration
+# 5. Post-Exploitation Enumeration
 
 
 ## 5.1 User Enumeration
@@ -212,7 +213,7 @@ Discovered sensitive file accessible without elevated privileges.
 
 Second protected resource obtained at user-level.
 
-# 🔐 6. Privilege Escalation
+# 6. Privilege Escalation
 
 
 ## 6.1 Sudo Privilege Assessment
