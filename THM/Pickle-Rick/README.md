@@ -5,7 +5,7 @@
 
 ---
 
-# 1️⃣ Lab Information
+# 1. Lab Information
 
 **Platform:** TryHackMe  
 **Environment Type:** Linux-based lab environment  
